@@ -1,0 +1,266 @@
+md`
+# A Taste of Observable
+`;
+
+md`
+Hello and welcome to Observable! 👋 We're glad you decided to create an account. Here we'll show you the basics of Observable, cover a few key concepts, and get you started.
+`;
+
+md`
+**What you are reading now—this page or document—is an Observable notebook.**
+`;
+
+md`
+A notebook is both a final product for presentation, and a large blank canvas for trying out ideas and calculations. How do you start? By creating **cells**. Cells are where you place content—text, JavaScript code, or other instructions.
+`;
+
+A_sample_JavaScript_cell_yielding_a_result = 22/7
+
+md`
+**Notebooks are made of cells.** Another sample:
+`;
+
+md`
+"Hello, I am a *Markdown* cell; I contain *formatted* **text**. My edit area (the shaded part) is pinned open so you can see it."
+`;
+
+md`
+**A cell's code or content is in the shaded area; the results display immediately above.**
+`;
+
+md`
+Every cell in an Observable notebook is editable. To display the shaded edit area, click in the left margin. **Try it** on this cell. Then try it on that cell with the (approximate) value of \`pi\`.
+`;
+
+md`
+Cells, because they are easily created, viewed, and modified, are a fundamental part of what makes Observable an environment for *trying out* ideas.
+`;
+
+md`
+#### Try it
+1. Mouse over the left margin until you see a plus sign (+), then **click the plus sign (+) to create a new cell**.
+You'll see the blue shaded area appear.
+2. **Use the left and right arrow keys to pick the cell type** (pick Markdown for now), then type some text.
+3. **Click the blue triangle (or type Shift-Return) to finish and run the cell**.
+`;
+
+md`
+Congratulations! You've created your first Observable cell.
+`;
+
+md`
+When you created that cell, you saw all of the available cell types (*currently* available—Observable doesn't sit still):
+`;
+
+md`
+- JavaScript cells (the default), for logic, calculations, and calls to JavaScript libraries.
+- [Markdown](https://observablehq.com/@observablehq/markdown-quick-reference) cells
+- HTML cells, for HTML
+- TeX cells, for math formulas
+- SQL cells, for SQL queries and other SQL code
+`;
+
+md`
+The most commonly used cell types are JavaScript and Markdown. Let's do some work with JavaScript cells now. (It doesn't matter if you're a JavaScript beginner; you'll see why in a moment.) 
+`;
+
+md`
+Here is a JavaScript cell that displays data in a table:
+`;
+
+Inputs.table(data)
+
+md `How could you have created this table yourself? Well, after attaching the file (more on that in just a bit), you could have taken advantage of Observable-provided blocks of JavaScript code, or **Snippets**. **Click the Snippets icon <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-width="2"><path d="M13 3H3C2.44772 3 2 3.44772 2 4V12C2 12.5523 2.44772 13 3 13H13C13.5523 13 14 12.5523 14 12V4C14 3.44772 13.5523 3 13 3Z" stroke="currentColor" stroke-width="2"></path><rect x="4" y="9" width="2" height="2" rx="0.5" fill="currentColor"></rect><rect x="7" y="5.5" width="2" height="5.5" rx="0.5" fill="currentColor"></rect><rect x="10" y="7" width="2" height="4" rx="0.5" fill="currentColor"></rect></svg> (in the upper-right) to view the JavaScript code you can choose from.**`
+
+md`
+#### Try it
+1. Create a new JavaScript cell by clicking the plus sign (+).
+2. In the upper right of your browser window, click the Snippets icon <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-width="2"><path d="M13 3H3C2.44772 3 2 3.44772 2 4V12C2 12.5523 2.44772 13 3 13H13C13.5523 13 14 12.5523 14 12V4C14 3.44772 13.5523 3 13 3Z" stroke="currentColor" stroke-width="2"></path><rect x="4" y="9" width="2" height="2" rx="0.5" fill="currentColor"></rect><rect x="7" y="5.5" width="2" height="5.5" rx="0.5" fill="currentColor"></rect><rect x="10" y="7" width="2" height="4" rx="0.5" fill="currentColor"></rect></svg>.
+3. Scroll down and then click **Table input** to paste in the Table input code.
+4. Be sure to click the blue triangle, or type Shift-Enter, to see the results.
+`;
+
+md`
+(**To move a cell**, move your pointer over the three vertical dots symbol, and then drag the cell to the spot you want.)
+`;
+
+md`
+You may have noticed that the Snippets code is not exactly the same as the example; the example shows the simplest case. To read about extended capabilities of each Snippets code block, see the **Docs** link in each Snippets section.
+`;
+
+md`
+Now, the more you learn about JavaScript the better; we're not going to pretend otherwise. But as we said earlier, Observable is a great place to try things out, to grab things from the Snippets menu and see how they work. Or, you can look at cells in other people's notebooks to see what solutions they came up with.
+`;
+
+md`
+Let's close the loop on attaching files: **To attach a file to a notebook, use the Data icon** <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-width="2"><path d="M7.19855 2.52175L7.88131 1.79111L7.19855 2.52175ZM12.6 11.7764L13.2581 11.0234L12.6 11.7764ZM5.34191 6.76078L11.9419 12.5293L13.2581 11.0234L6.65809 5.2549L5.34191 6.76078ZM10.8958 13.6864L3.35462 6.63385L1.98852 8.09459L9.52965 15.1472L10.8958 13.6864ZM6.51578 3.25238L13.8172 10.0755L15.1828 8.61419L7.88131 1.79111L6.51578 3.25238ZM3.08395 3.55474C3.91017 2.45311 5.50967 2.31219 6.51578 3.25238L7.88131 1.79111C6.0058 0.0384695 3.02413 0.301162 1.48395 2.35474L3.08395 3.55474ZM3.35462 6.63385C2.49183 5.82695 2.37516 4.49978 3.08395 3.55474L1.48395 2.35474C0.162683 4.11642 0.380169 6.59044 1.98852 8.09459L3.35462 6.63385ZM11.993 13.6551C11.6977 13.9647 11.2082 13.9786 10.8958 13.6864L9.52965 15.1472C10.6432 16.1886 12.3878 16.1388 13.4402 15.0356L11.993 13.6551ZM11.9419 12.5293C12.2764 12.8216 12.2996 13.3337 11.993 13.6551L13.4402 15.0356C14.5328 13.8903 14.4499 12.0651 13.2581 11.0234L11.9419 12.5293Z" fill="currentColor"></path></svg></button> in the upper-right of the notebook (then click the plus sign next to **File attachments**). For the Olympic data, we attached the file ahead of time (data credit to [Matt Riggott](https://www.flother.is/blog/olympic-games-data/)).
+`;
+
+md`
+After attaching the file, we used the \`FileAttachment\` function (a very useful bit of code) to recognize the attached file as a \`.csv\` file.
+`;
+
+data = FileAttachment(/* "athletes.csv" */"https://static.observableusercontent.com/files/31ca24545a0603dce099d10ee89ee5ae72d29fa55e8fc7c9ffb5ded87ac83060d80f1d9e21f4ae8eb04c1e8940b7287d179fe8060d887fb1f055f430e210007c").csv({typed: true})
+
+md`
+You could also have attached an \`.xlsx\`, GIF, \`.json\`, or any other type of file; the [File Attachments](https://observablehq.com/@observablehq/file-attachments) notebook explains all the details. 
+`;
+
+md`
+After attaching a file and viewing its data in a table, the natural next step is to plot the data. Let's look at a scatterplot based on the \`athletes.csv\` data:
+`;
+
+Plot.plot({
+  marks: [
+    Plot.dot(data, {x: "weight", y: "height", stroke: "sex"})
+  ]
+})
+
+md`
+How can you create this scatterplot yourself? There's a **Snippet** for that: the Scatterplot chart.
+`;
+
+md`
+#### Try it
+1. Create a new JavaScript cell by clicking the plus sign.
+2. In the upper right of your browser window, click the Snippets icon. <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-width="2"><path d="M13 3H3C2.44772 3 2 3.44772 2 4V12C2 12.5523 2.44772 13 3 13H13C13.5523 13 14 12.5523 14 12V4C14 3.44772 13.5523 3 13 3Z" stroke="currentColor" stroke-width="2"></path><rect x="4" y="9" width="2" height="2" rx="0.5" fill="currentColor"></rect><rect x="7" y="5.5" width="2" height="5.5" rx="0.5" fill="currentColor"></rect><rect x="10" y="7" width="2" height="4" rx="0.5" fill="currentColor"></rect></svg>
+3. Scroll down and then click **Scatterplot chart** to paste in the Scatterplot chart code.
+4. Edit the \`Plot.dot\` line to resemble the code in the example.
+5. Be sure to click the blue triangle, or type Shift-Return, to see the results.
+`;
+
+md`
+Let's try one more thing with the scatterplot.
+`;
+
+md`
+#### Try it
+Try changing the definition of \`stroke\` to "weight" instead of "sex". What happens? (Don't forget to click the blue triangle or type Shift-Enter.)
+`;
+
+md`
+Aha! So the scatterplot is not just a static display, not just an included screenshot from some other graphic program: It can react to changes.
+`;
+
+md`
+**Observable cells are reactive; they can update based on new data or user input.**
+`;
+
+md`
+This works because of the way Observable uses [dataflow](https://observablehq.com/@observablehq/how-observable-runs) to determine which values are dependent on others, and recalculates as needed (like a spreadsheet).
+`;
+
+md`
+The real magic 🧙‍♀️ comes when you add **interactivity**. If you use \`viewof\` with an [input](/@observablehq/inputs), you can quickly provide an interactive UI.
+`;
+
+viewof myColorScheme = Inputs.select(["rdbu", "piyg", "puor", "spectral", "blues", "reds", "warm", "cool"], {label: "Color scheme"})
+
+Plot.plot({
+  color: {
+    type: "diverging",
+    scheme: myColorScheme,
+    reverse: true
+  },
+  marks: [
+    Plot.dot(data, {x: "weight", y: "height", stroke: "weight"})
+  ]
+})
+
+md`
+Use the drop-down list to pick a color scheme, and watch the scatterplot change color. Thanks to dataflow, the scatterplot automatically re-runs when its inputs change! 
+`;
+
+md`
+One final **Try it**, if you want to save everything you've created so far in this notebook:
+1. Scroll to the top of the browser window.
+2. Click the notebook menu button (**...**).
+3. Click **Fork**. This creates a copy of the notebook under your account. You can then modify the forked copy as much as you like.
+4. Bookmark the URL for the fork for convenience (although you can always find it under the **Notebooks** link for your account).
+`;
+
+md`
+That was just a taste of Observable. There is a lot more:
+- Importing from [\`.xlsx\` files](https://observablehq.com/@observablehq/xlsx)
+- [Fetching from a URL or querying a database](/@observablehq/introduction-to-data)
+- Using pre-packaged [templates](https://observablehq.com/templates)
+- [Importing](https://observablehq.com/@observablehq/introduction-to-imports?collection=@observablehq/notebook-fundamentals) functionality in named cells from other notebooks
+- [Embedding](https://observablehq.com/@observablehq/introduction-to-embedding) results into a Web page for others
+- Using [promises](https://observablehq.com/@observablehq/introduction-to-promises?collection=@observablehq/javascript-in-observable) and *await* to handle asynchronous values
+- Using [generators](https://observablehq.com/@observablehq/introduction-to-generators?collection=@observablehq/javascript-in-observable) in combination with [promises](https://observablehq.com/@observablehq/introduction-to-promises?collection=@observablehq/javascript-in-observable) for interactive views 
+
+`;
+
+md`
+As you explore and learn, don't worry if you feel you are going slowly. Experienced users will tell you how much faster Observable is to use now, but you should still go at your own pace in terms of learning. We want you to make Observable part of your standard toolkit, not something that you bring out only for special occasions.
+`;
+
+md`
+### Observable speed tips
+When you *are* up to speed and want to move more quickly, the following tips will help:
+- Run the current cell: \${keys("Shift-Enter")}
+- Create a new cell after the current cell: \${keys("Mod-Enter")}.
+- Undo the last change: \${keys("Mod-Z")}
+- Delete cells: \${keys("Alt-Backspace")}
+
+`;
+
+md`
+- Other keyboard shortcuts are [here](https://observablehq.com/@observablehq/keyboard-shortcuts).
+- You can read what type a cell is from the symbol in the left margin of the edit area.
+- When editing a Markdown cell, common formatting commands appear as buttons in the cell toolbar (at the bottom of the browser window).
+- Reminder sheet of the basics: [Getting Started](https://observablehq.com/@observablehq/getting-started).
+`;
+
+md`
+To learn 🤔 more, open the <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="position: relative; top: 0.2em;"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M4.92682 6.10635H6.98981C7.00885 5.49063 7.4278 5.08438 8.03717 5.08438C8.63385 5.08438 9.0528 5.43985 9.0528 5.95401C9.0528 6.5126 8.83063 6.77921 7.96735 7.28702C7.08502 7.79483 6.76764 8.36612 6.88824 9.45157L6.90729 9.70547H8.88776V9.40714C8.88776 8.81046 9.12897 8.52481 9.9986 8.02335C10.9317 7.4838 11.3697 6.83633 11.3697 5.89688C11.3697 4.37344 10.1129 3.35782 8.18317 3.35782C6.15192 3.35782 4.94586 4.44327 4.92682 6.10635ZM7.95465 12.8222C8.7735 12.8222 9.24957 12.3969 9.24957 11.6669C9.24957 10.9306 8.7735 10.5053 7.95465 10.5053C7.1358 10.5053 6.65338 10.9306 6.65338 11.6669C6.65338 12.3969 7.1358 12.8222 7.95465 12.8222Z" fill="currentColor"></path></svg> help pane in the right margin, where you’ll find our quick guides. Also, see our [Documentation main page](https://observablehq.com/@observablehq/documentation), and **Learning more** immediately following.
+
+Explore, learn, and have fun! 👋
+`;
+
+md`
+## Learning more
+`;
+
+md`
+Different folks have different learning styles, so in addition to the <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="position: relative; top: 0.2em;"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M4.92682 6.10635H6.98981C7.00885 5.49063 7.4278 5.08438 8.03717 5.08438C8.63385 5.08438 9.0528 5.43985 9.0528 5.95401C9.0528 6.5126 8.83063 6.77921 7.96735 7.28702C7.08502 7.79483 6.76764 8.36612 6.88824 9.45157L6.90729 9.70547H8.88776V9.40714C8.88776 8.81046 9.12897 8.52481 9.9986 8.02335C10.9317 7.4838 11.3697 6.83633 11.3697 5.89688C11.3697 4.37344 10.1129 3.35782 8.18317 3.35782C6.15192 3.35782 4.94586 4.44327 4.92682 6.10635ZM7.95465 12.8222C8.7735 12.8222 9.24957 12.3969 9.24957 11.6669C9.24957 10.9306 8.7735 10.5053 7.95465 10.5053C7.1358 10.5053 6.65338 10.9306 6.65338 11.6669C6.65338 12.3969 7.1358 12.8222 7.95465 12.8222Z" fill="currentColor"></path></svg> help pane, see our videos or tutorials:
+- [Videos](https://observablehq.com/collection/@observablehq/learning-observable)
+- [Tutorials](https://observablehq.com/tutorials)
+`;
+
+md`
+We also have introductory tutorial sequences designed for folks with different past experiences:
+`;
+
+md`
+- **[Observable Plot](https://observablehq.com/@observablehq/plot?collection=@observablehq/plot)**<br>Many of the examples you saw above come from [Observable Plot](https://observablehq.com/@observablehq/plot), a free, open-source JavaScript library for quickly visualizing tabular data. It's ideal for exploring data you've already collected and for gleaning insights from that data.
+  
+- **[Observable for Jupyter Users](/@observablehq/observable-for-jupyter-users?collection=@observablehq/observable-for-jupyter-users)**<br> If you have a Python data science background, or just feel more comfortable in Python than in JavaScript, these tutorials will help ease you in.
+
+- **[Learn D3](/@d3/learn-d3)**<br>  D3 is a powerful JavaScript library that helps you bring data to life using HTML, SVG, and CSS. If you already have some D3 under your belt, you'll find using D3 in Observable is a little bit different. Whether you're new to D3, Observable, or both, get your feet wet here.
+`;
+
+md`
+For the latest inspiring work being done by the Observable community, check out the [Explore](https://observablehq.com/explore) page.
+`;
+
+md`
+*(Thanks to Jeremy Ashkenas, who created the original version of this notebook!)*
+`;
+
+md`
+## Appendix
+`;
+
+md`
+(This is an area for code used in the rest of the notebook.)
+`;
+
+async function icon2(file, {width = "16px"} = {}) {
+  const src = await file.url();
+  return () => htl.html`<img style=${{width, borderRadius: "50%", verticalAlign: "center"}} src=${src}>`;
+}
+
+keys = s => html`<span style="font-family:var(--sans-serif);font-size:90%;">${keysText(s)}`
+
+import {keys as keysText, mac} from "@mbostock/keys"

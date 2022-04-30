@@ -1,0 +1,2 @@
+import {db} from "@observablehq/ecommerce-analytics-demo-data"
+db.describe("events")
