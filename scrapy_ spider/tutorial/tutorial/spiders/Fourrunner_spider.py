@@ -14,7 +14,7 @@ class FourrunnerSpider(scrapy.Spider):
             yield{
                 'name': cars.css('h2.title::text').get(),
                 'price': cars.css('span.primary-price::text').get().replace('$', ''),
-                'millage': cars.css('div.mileage::text').get(),
+                'millage': cars.css('div.mileage::text').get().replace(' mi', ''),
                 'link': 'https://www.cars.com'+cars.css('a.vehicle-card-link').attrib['href']
             }
 
