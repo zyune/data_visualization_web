@@ -1,7 +1,7 @@
 # I wrote a spider to crawl the 2018 toyota 4runner , used car. In portland area.
 
-![output](img/4runner_2018.png)
-![output](img/median_price_trim.png)
+![output](img/4runner_18.png)
+![output](img/median_price.png)
 
 ## The data I crawled from cars, no business use
 ```
