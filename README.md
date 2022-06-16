@@ -45,3 +45,7 @@ name
 2018 Toyota 4Runner TRD PRO-LIFTED-SUPERCHARGED+MORE	58990.0	40725.0
 2018 Toyota 4Runner TRD Pro	47361.0	50097.0
 ```
+## 2018 年左右的 volvo cx60， toyota 4runner 和benz ecoupe 随里程数增加的的折价率
+![output](img/fourrunner.jpeg)
+![output](img/ecoupe.jpeg)
+![output](img/volvo.jpeg)
